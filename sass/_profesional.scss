@@ -13,9 +13,130 @@
     color: variables.$primary-color;
     margin-bottom: 1.5rem;
     text-transform: uppercase;
-    
+    border-bottom: 2px solid variables.$primary-color;
 }
 
 .profile-section p {
     margin-bottom: 2rem;
+}
+
+/* Media Queries */
+@media (max-width: 1440px) {
+    .main-content {
+        padding: 1.8rem 1.8rem;
+        margin: 4.5rem;
+    }
+    
+    .section-title-main {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 1280px) {
+    .main-content {
+        padding: 1.6rem 1.6rem;
+        margin: 4rem;
+    }
+    
+    .section-title-main {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .main-content {
+        padding: 1.4rem 1.4rem;
+        margin: 3.5rem;
+        max-width: calc(100% - 7rem);
+        width: auto;
+    }
+    
+    .section-title-main {
+        font-size: 1.5rem;
+    }
+    
+    .profile-section p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .main-content {
+        padding: 1.2rem 1.2rem;
+        margin: 3rem;
+        max-width: calc(100% - 6rem);
+    }
+    
+    .section-title-main {
+        font-size: 1.4rem;
+    }
+    
+    .profile-section p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 1rem 1rem;
+        margin: 2.5rem;
+        max-width: calc(100% - 5rem);
+    }
+    
+    .section-title-main {
+        font-size: 1.3rem;
+    }
+    
+    .profile-section p {
+        margin-bottom: 1.5rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-content {
+        padding: 0.9rem 0.9rem;
+        margin: 2rem;
+    }
+    
+    .section-title-main {
+        font-size: 1.2rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .profile-section p {
+        margin-bottom: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content {
+        padding: 0.8rem 0.8rem;
+        margin: 1.5rem;
+    }
+    
+    .section-title-main {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .profile-section p {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .main-content {
+        padding: 0.7rem 0.7rem;
+        margin: 1rem;
+    }
+    
+    .section-title-main {
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .profile-section p {
+        margin-bottom: 0.8rem;
+    }
 }
