@@ -1,0 +1,21 @@
+@use "variables";
+
+.main-content {
+    padding: 2rem 2rem;
+    border: 2px solid variables.$secondary-color;
+    border-radius: 0%;
+    margin: 5rem;
+    background-color: variables.$secondary-color;
+}
+
+.section-title-main {
+    font-size: 1.8rem;
+    color: variables.$primary-color;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    
+}
+
+.profile-section p {
+    margin-bottom: 2rem;
+}

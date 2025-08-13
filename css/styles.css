@@ -1,0 +1,74 @@
+.personal {
+  background-color: #1c035f;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #e9634c;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-size: 2rem;
+  color: #e9634c;
+  margin-bottom: 0.25rem;
+}
+
+.section-title {
+  font-size: 1.3rem;
+  color: #e9634c;
+  border-bottom: 2px solid #4c14e6;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.main-content {
+  padding: 2rem 2rem;
+  border: 2px solid #4c14e6;
+  border-radius: 0%;
+  margin: 5rem;
+  background-color: #4c14e6;
+}
+
+.section-title-main {
+  font-size: 1.8rem;
+  color: #e9634c;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.profile-section p {
+  margin-bottom: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1c035f;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=styles.css.map */

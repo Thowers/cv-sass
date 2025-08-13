@@ -1,0 +1,25 @@
+@use "variables";
+@use "personal";
+@use "profesional";
+@use "skills";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: variables.$background-color;
+    color: variables.$text-color;
+    line-height: 1.6;
+}
+
+.resume-container {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    margin: 0 auto;
+}
