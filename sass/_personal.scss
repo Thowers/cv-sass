@@ -1,0 +1,8 @@
+@use "variables";
+
+.personal-info{
+    h1{
+        color: variables.$primary-color;
+        font-size: 30px;
+    }
+}

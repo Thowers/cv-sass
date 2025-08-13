@@ -1,0 +1,20 @@
+.personal-info h1 {
+  color: #e9634c;
+  font-size: 30px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1c035f;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=styles.css.map */
