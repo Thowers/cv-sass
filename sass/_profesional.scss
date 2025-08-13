@@ -97,6 +97,7 @@
     .main-content {
         padding: 0.9rem 0.9rem;
         margin: 2rem;
+        max-width: calc(100% - 4rem);
     }
     
     .section-title-main {
@@ -106,6 +107,7 @@
     
     .profile-section p {
         margin-bottom: 1.2rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -113,6 +115,7 @@
     .main-content {
         padding: 0.8rem 0.8rem;
         margin: 1.5rem;
+        max-width: calc(100% - 3rem);
     }
     
     .section-title-main {
@@ -122,6 +125,7 @@
     
     .profile-section p {
         margin-bottom: 1rem;
+        font-size: 0.75rem;
     }
 }
 
@@ -129,6 +133,7 @@
     .main-content {
         padding: 0.7rem 0.7rem;
         margin: 1rem;
+        max-width: calc(100% - 2rem);
     }
     
     .section-title-main {
@@ -138,5 +143,6 @@
     
     .profile-section p {
         margin-bottom: 0.8rem;
+        font-size: 0.7rem;
     }
 }
