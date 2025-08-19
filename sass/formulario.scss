@@ -1,0 +1,136 @@
+@import 'variables';
+
+.formulario-container {
+  margin: 40px auto;
+  padding: 32px;
+  background: $card-background-color;
+  border-radius: 12px;
+  border: 4px solid $border-color;
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+label {
+  color: $card-text-color;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+  padding: 10px 12px;
+  border: 4px solid $border-color;
+  border-radius: 6px;
+  background: $secondary-color;
+  color: $light-text-color;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+  outline: none;
+
+  &:focus {
+    border-color: $primary-color;
+    background: $background-color;
+    color: $text-color;
+  }
+
+  &::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    background-color: transparent;
+  }
+}
+
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  input[type="password"] {
+    flex: 1;
+  }
+
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+    svg {
+      stroke: #fff;
+      fill: #fff;
+    }
+  }
+}
+
+input[type="checkbox"] {
+  accent-color: $primary-color;
+  margin-right: 8px;
+}
+
+button[type="submit"] {
+  background: $primary-color;
+  color: $text-color;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+
+  &:hover {
+    background: darken($primary-color, 10%);
+  }
+}
+
+button[type="button"] {
+  background: $primary-color;
+  color: $text-color;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  
+
+  &:hover {
+    background: darken($primary-color, 10%);
+  }
+  
+}
+
+input.invalid {
+  border-color: #e74c3c;
+  background: lighten($card-background-color, 10%);
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 0.9rem;
+  margin-top: 4px;
+  min-height: 18px;
+}
+
+.success-message {
+  color: $secondary-color;
+  font-size: 1rem;
+  margin-top: 16px;
+  text-align: center;
+}

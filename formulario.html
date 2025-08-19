@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="validacion.js"></script>
+    <title>Formulario</title>
+</head>
+
+<body>
+    <section class="personal">
+        <div class="personal-content">
+            <img src="perfil.jpg" alt="Foto de perfil" class="profile-picture">
+            <h1 class="name">Nicolas Parra Torres</h1>
+            <div id="contacto" class="contact-info section">
+                <h2 class="section-title"></h2>
+            </div>
+        </div>
+    </section>
+    <div class="formulario-container">
+        <form id="miFormulario" novalidate>
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <div class="error-message" id="error-nombre"></div>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+            <div class="error-message" id="error-correo"></div>
+
+            <label for="contraseña">Contraseña:</label>
+            <div class="password-wrapper">
+                <input type="password" id="contraseña" name="contraseña" required>
+                <button type="button" class="toggle-password" tabindex="-1">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M1 12C3 7 8 4 12 4C16 4 21 7 23 12C21 17 16 20 12 20C8 20 3 17 1 12Z" stroke="#fff"
+                            stroke-width="2" fill="none" />
+                        <circle cx="12" cy="12" r="3" fill="#fff" />
+                    </svg>
+                </button>
+            </div>
+            <div class="error-message" id="error-contraseña"></div>
+
+            <label for="confirmar">Confirmar contraseña:</label>
+            <div class="password-wrapper">
+                <input type="password" id="confirmar" name="confirmar" required>
+                <button type="button" class="toggle-password" tabindex="-1">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M1 12C3 7 8 4 12 4C16 4 21 7 23 12C21 17 16 20 12 20C8 20 3 17 1 12Z" stroke="#fff"
+                            stroke-width="2" fill="none" />
+                        <circle cx="12" cy="12" r="3" fill="#fff" />
+                    </svg>
+                </button>
+            </div>
+            <div class="error-message" id="error-confirmar"></div>
+
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input type="date" id="fecha" name="fecha" required>
+            <div class="error-message" id="error-fecha"></div>
+
+            <label for="celular">Celular:</label>
+            <input type="text" id="celular" name="celular">
+            <div class="error-message" id="error-celular"></div>
+
+            <label>
+                <input type="checkbox" id="terminos" name="terminos" required>
+                Acepto los términos y condiciones
+            </label>
+            <div class="error-message" id="error-terminos"></div>
+
+            <button type="submit" id="btnEnviar">Enviar</button>
+            <div class="success-message" id="success-message"></div>
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="footer-logo">
+        </div>
+    </footer>
+</body>
+
+</html>
